@@ -12,13 +12,16 @@ const port = process.env.PORT || 6000;
 
 app.use(express.json());
 
-app.use(me);
+
 
 
 app.use(cors({
   origin: '*',
   methods: ['GET']
 }));
+
+
+app.use(me);
 
 
 
